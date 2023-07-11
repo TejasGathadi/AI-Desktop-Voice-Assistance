@@ -56,8 +56,7 @@ def sendEmail(to, content):
 
 if __name__ == "__main__":
     wishMe()
-    # while True:
-    if 1:
+    while True:
         query = takeCommand().lower()
 
         if 'wikipedia' in query:
@@ -96,6 +95,11 @@ if __name__ == "__main__":
                 speak("Email has been sent!..")
             except Exception as e:
                 speak("Sorry there was an error while sending email, try again")    
+
+        elif 'quit' in query:
+            print("Hope I have helped you with your request, see you around, till then bye bye")
+            speak("Hope I have helped you with your request, see you around, till then bye bye")
+            exit()        
             
 
 
